@@ -2,20 +2,17 @@ package Array;
 
 import java.util.Scanner;
 
-public class main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Size of Array: ");
-        int a = sc.nextInt();
+public class Main {
+
+    public static int[] input(Scanner sc){
+        System.out.println("Enter The Size of Array: ");
+        int a = sc.nextInt(); 
         int[] arr = new int[a];
-
-
-
-
-
-        sc.close();
-    }
-    public static int[] input(int[] arr, int a){
+        System.out.println("Enter the " + a+ " Number: ");
+        for (int i = 0; i <arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
         
+        return arr;
     }
 }
